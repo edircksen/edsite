@@ -1,0 +1,55 @@
+<!-- Easy JavaScript # 17 - onclick event handler -->
+<!--  src="C:/html/nazmusEventH.js" -->
+<head>
+  <script type="text/javascript">
+  document.getElementById("name").onclick = function(){
+	var name = prompt("Enter your name");
+  document.getElementById("outputName").innerText = name;
+}
+
+document.getElementById("city").onclick = function(){
+	var city = prompt("Enter your city");
+  document.getElementById("outputCity").innerText = city;
+}
+
+document.getElementById("changeGreen").onclick = function(){
+	document.getElementById("outputName").style.color = 'green';
+  document.getElementById("outputCity").style.color = 'green';
+}
+
+document.getElementById("changeRed").onclick = function(){
+	document.getElementById("outputName").style.color = 'red';
+  document.getElementById("outputCity").style.color = 'red';
+}  
+  </script>
+  <style>
+  #outputName, #outputCity{
+  color: red;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Name City</h1>
+  </header>
+  
+<p>
+Welcome to the 17th Easy JavaScript tutorial, part of <a href="http://www.easyprogramming.net">EasyProgramming.net</a>. Let's look at how event handlers work, most specifically, the onclick event handler. 
+</p>
+<p>
+One of the most common actions on any website is that you click a button, and something happens. So let's practice!
+</p>
+<p>
+Let's take a look!
+</p>
+<button id="name">Name</button>
+<button id="city">City</button>
+<button id="changeGreen">Change Font Color Green</button>
+<button id="changeRed">Change Font Color Red</button>
+
+<p>
+Your Name is <span id="outputName">____</span>. The city in which you live is <span id="outputCity">____</span>.
+</p>
+
+</body>
+
